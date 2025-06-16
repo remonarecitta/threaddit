@@ -1,7 +1,7 @@
-.App {
-  text-align: center;
-}
 
+*{
+  margin: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,6 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .App-header {
   background-color: #282c34;
@@ -21,7 +24,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FAFAF9;
 }
 
 .App-link {
