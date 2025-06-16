@@ -1,5 +1,4 @@
 import './RelatedProducts.css';
-import Item from '../Item/Item';
 
 const RelatedProducts = () =>{
    
@@ -8,9 +7,9 @@ return (
         <h1>Related Items</h1>
         <hr/>
         <div className='related-product-item'>
-        {data.map((item, i) =>{
+        {/* {data.map((item, i) =>{
             return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>
-        })}
+        })} */}
         </div>
     </div>
 )
