@@ -1,13 +1,12 @@
 import './ProductDisplay.css';
 import star from '../Assets/star.jpg';
 import { useContext, useState } from 'react';
-import { ShopContext } from '../../Context/ShopContext';
 
 const ProductDisplay = (props) => {
     const {product} = props;
     const [quantity, setQuantity] = useState(0);
     const [selectedSize, setSelectedSize] = useState('');
-    
+
     const addToCart= (id) => {
   fetch('https://dummyjson.com/carts/add', {
   method: 'POST',

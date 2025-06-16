@@ -3,10 +3,8 @@ import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart from '../Assets/cart-removebg-preview.png';
 import { Link } from 'react-router-dom';
-import { ShopContext } from '../../Context/ShopContext';
 const Navbar = () => {
     const [menu, setMenu] = useState('shop');
-    const {getCartCount} = useContext(ShopContext);
     return (
         <div className='navbar'>
              <div className='nav-logo'>

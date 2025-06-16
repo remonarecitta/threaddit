@@ -1,8 +1,6 @@
 import { useContext, useEffect,useState } from 'react';
 import './CartItem.css';
-import { ShopContext } from '../../Context/ShopContext';
 import remove from '../Assets/cross.png';
-import { data } from 'react-router-dom';
 
 const CartItem = () =>{
         const [cart,getCart] = useState({})

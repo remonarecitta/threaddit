@@ -1,11 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import './styles/ShopCategory.css';
-import {ShopContext} from '../Context/ShopContext';
 import Item from "../Components/Item/Item";
 import arrow from '../Components/Assets/down-arrow.png';
 
 const ShopCategory = (props) => {
-    // const {data} = useContext(ShopContext)
 
  const [data,setData] = useState([]);
 
