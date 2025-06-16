@@ -1,5 +1,4 @@
 import './Popular.css';
-import data from '../Assets/data';
 import Item from '../Item/Item';
 import { useEffect, useState } from 'react';
 

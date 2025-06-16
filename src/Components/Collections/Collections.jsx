@@ -1,7 +1,5 @@
 import './Collections.css';
-import data from '../Assets/data';
 import Item from '../Item/Item';
-import collections from '../Assets/collection';
 import { useEffect, useState } from 'react';
 
 const Collections = () =>{
