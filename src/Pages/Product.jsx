@@ -1,4 +1,4 @@
-import react, { useContext } from "react";
+import react, { useContext, useRef } from "react";
 import { useParams } from "react-router-dom";
 import Breadcrumb from "../Components/Breadcrumb/Breadcrumb";
 import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 const Product = () => {
 const [collection, setCollection] = useState({});
     const {productId} = useParams();
-    console.log(productId,"pd")
+ const productRef = useRef(null);
 
 useEffect(() => {
   if (!productId) return;
@@ -19,11 +19,14 @@ useEffect(() => {
     .then(data => {
       setCollection(data);
     })
+    if (productRef.current) {
+      productRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }, [productId]);
 
 
     return (
-        <div>
+        <div ref={productRef}>
             { collection &&
             <><Breadcrumb product={collection} />
             <ProductDisplay product={collection} />

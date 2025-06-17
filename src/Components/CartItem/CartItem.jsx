@@ -3,7 +3,7 @@ import './CartItem.css';
 import remove from '../Assets/cross.png';
 
 const CartItem = () =>{
-        const [cart,getCart] = useState({})
+const [cart,getCart] = useState([])
 const userId = localStorage.getItem('userId');
 
 useEffect(() =>{
